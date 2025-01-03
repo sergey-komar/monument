@@ -1,0 +1,231 @@
+.footer-top {
+    padding: 6rem 0;
+    background: #212121;
+}
+.footer-top__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.footer-top__left {
+    width: 50%;
+}
+.footer-top__left-title {
+    margin-bottom: 6rem;
+    font-size: 3.2rem;
+    color: #fff;
+}
+.footer-top__item {
+    display: block;
+    margin: 0 0 20px 40px;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+}
+.footer-top__item::before{
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: -4rem;
+}
+.footer-top__item:nth-child(1)::before{
+    background: url('../images/icon/mingcute_location-fill.svg') no-repeat;
+}
+.footer-top__item:nth-child(2)::before{
+    background: url('../images/icon/carbon_phone-filled.svg') no-repeat;
+}
+.footer-top__item:nth-child(3)::before{
+    background: url('../images/icon/fluent_mail-20-filled.svg') no-repeat;
+}
+.footer-top__item span{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-top__item-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-top__right {
+    width: 50%;
+}
+.footer-top__form-title {
+    margin-bottom: 15px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-top__form-text {
+    margin-bottom: 3.5rem;
+    color: #fff;
+}
+.footer-top__elem span{
+    display: block;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-top__box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-top__elem {
+    width: 290px;
+}
+.footer-top__elem-input{
+    padding: 0 10px 0 10px;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+}
+.footer-top__elem-input::placeholder{
+    font-size: 16px;
+    color: #7f808e;
+}
+.footer-top__elem-btn {
+    height: 45px;
+    line-height: 45px;
+    transform: translateY(25px);
+}
+.footer-center {
+    padding: 6rem 0;
+    background: #000;
+}
+.footer-center__block {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+}
+.footer-center__logo {
+    display: flex;
+    align-items: center;
+}
+.footer-center__logo p{
+    color: #fff;
+}
+.footer-center__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.footer-center__item {
+    width: calc(100% / 3 - 5rem);
+}
+.footer-center__item-title {
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    color: #c57b46;
+    font-weight: 700;
+}
+.footer-center__menu li{
+    margin-bottom: 10px;
+}
+.footer-center__menu li a{
+    color: #fff;
+}
+.footer-center__menu li a:hover{
+    color: #c57b46;
+}
+.footer-bottom {
+    padding: 20px 0;
+    background: #333;
+}
+.footer-bottom__box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom__box-text {
+    font-size: 14px;
+    color: #fff;
+}
+
+//map
+.contact__title{
+    padding-top: 8rem;
+    margin-bottom: 40px;
+}
+
+
+
+//modal
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+}
+.modal__inner {
+    position: relative;
+    max-width: 66rem;
+    background: #333;
+}
+.modal__inner-block {
+    padding: 3rem;
+}
+.modal__inner-block-title {
+    margin-bottom: 10px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.modal__inner-block-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #fff
+}
+.modal-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.modal-form__item {
+    width: 290px;
+}
+.modal-form__item span{
+    font-size: 14px;
+    color: #fff;
+}
+.modal-form__input {
+    padding: 0 10px 0 10px;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background: #fff;
+    border: none;
+    font-size: 16px;
+}
+.modal-form__btn {
+    height: 45px;
+    line-height: 45px;
+    transform: translateY(25px);
+}
+.modal__close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
