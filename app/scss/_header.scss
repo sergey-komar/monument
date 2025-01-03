@@ -1,0 +1,66 @@
+.header-top {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top__sity,
+.header-top__contact-date {
+    font-size: 16px;
+    font-weight: 500;
+}
+.header-top__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-top__contact-phone {
+    font-size: 24px;
+    font-weight: 700;
+}
+.header-top__contact-date {
+    margin-left: 5rem;
+}
+.header-top__btn {
+    max-width: 210px;
+    height: 35px;
+    line-height: 35px;
+}
+.header-bottom {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    background: #333;
+}
+.header-bottom__inner{
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    justify-content: space-evenly;
+}
+.header-bottom__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-bottom__logo p{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.menu__list {
+    display: flex;
+    gap: 5rem;
+}
+.menu__list li a{
+    font-size: 16px;
+    color: #fff;
+}
+.menu__list li a:hover,
+.header-top__contact-phone:hover{
+    color: #ee9e87;
+}
+.menu__list li a.menu__list--active {
+    color: #ee9e87;
+}
