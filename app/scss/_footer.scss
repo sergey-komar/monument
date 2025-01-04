@@ -172,10 +172,11 @@
 .modal__inner {
     position: relative;
     max-width: 66rem;
-    background: #333;
+   
 }
 .modal__inner-block {
     padding: 3rem;
+    background: #333;
 }
 .modal__inner-block-title {
     margin-bottom: 10px;
@@ -223,6 +224,31 @@
     color: #fff;
     cursor: pointer;
 }
+
+.btnUp{
+    background:#c57b46;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+  }
+  
+  .btnUp-visible{
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
 .show{
     display: flex;
 }

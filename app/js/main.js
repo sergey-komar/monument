@@ -1,5 +1,7 @@
 $(function () {
-
+    $('.footer-center__item-title').on('click', function(){
+        $(this).next().slideToggle(500); 
+     });
 })
 
 
@@ -20,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalBtn = document.querySelectorAll('.button-click');
     const modal = document.querySelector('.modal');
     const modalCloseBtn = document.querySelector('.modal__close');
-    const test = calcScroll();
+    const scroll = calcScroll();
 
 
     if(modalBtn){
@@ -29,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 modal.classList.add('show');
                 modal.classList.remove('hide');
                 document.body.style.overflow = 'hidden';
-                document.body.style.marginRight = `${test}px`;
+                document.body.style.marginRight = `${scroll}px`;
             })
         });
     }
@@ -66,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    // //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
+
     function calcScroll(){
         let div = document.createElement('div');
         div.style.width = '50px';
@@ -83,7 +85,50 @@ window.addEventListener('DOMContentLoaded', () => {
         return scrollWidth;
         }
 
-   
-    //УБИРАЕМ ДЁРГАНИЕ МОДАЛЬНОГО ОКНА ПРИ ПОЯВЛЕНИИ
 
-})
+
+        const footerTitle = document.querySelectorAll('.footer-center__item-title');
+    
+        footerTitle.forEach(item => {
+            item.addEventListener('click', () => {
+               item.classList.toggle('open');
+              
+            })
+        })
+
+
+        const btn = document.querySelector('.btnUp');
+
+        btn.addEventListener('click', ()=>{
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth' 
+
+            });
+        });
+        function up() {
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 690){
+            btn.classList.add('btnUp-visible');
+            }else{
+            btn.classList.remove('btnUp-visible');
+            }
+        })
+        }
+        up();
+
+
+
+
+
+        var element = document.getElementById('input-mask');
+        var element2 = document.getElementById('input-mask2');
+        var maskOptions = {
+            mask: '+{7}(000)000-00-00'
+        };
+
+        var mask = IMask(element, maskOptions);
+        var mask2 = IMask(element2, maskOptions);
+
+
+})//

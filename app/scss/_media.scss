@@ -35,6 +35,19 @@
     .varieties-block__item {
         width: calc(100% / 4 - 15px);
     }
+    .modal-form{
+        gap: 10px;
+    }
+    .modal__inner-block-text{
+        margin-bottom: 15px;
+    }
+    .modal-form__btn{
+        margin-top: 15px;
+        transform: translateY(0);
+    }
+    .modal-form__item{
+        width: 100%;
+    }
 }
 
 
@@ -47,6 +60,40 @@
     .advantages-block__item{
         width: calc(100% / 2 - 35px);
     }
+    .catalog-block,
+    .quality-block{
+        flex-direction: column;
+    }
+    .catalog-block__img,
+    .quality-block__img{
+        order: 1;
+    }
+    .catalog-block__content,
+    .quality-block__content{
+        width: 100%;
+    }
+    .finished-block,
+    .workicon-block,
+    .photo-block{
+        gap: 10px;
+    }
+    .finished-block__item,
+    .photo-block__item {
+        width: calc(100% / 4 - 10px);
+    }
+    .workicon-block__item {
+        width: calc(100% / 3 - 10px);
+    }
+    .services-block__item {
+        width: calc(100% / 2 - 30px);
+    }
+    .services-block{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-center__block{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -57,7 +104,7 @@
     .title{
         margin-bottom: 20px;
         font-size: 24px;
-        line-height: 1.3;
+        line-height: 1.2;
     }
     .button{
         max-width: 100%;
@@ -110,7 +157,12 @@
     .reviews,
     .work,
     .varieties,
-    .workshop{
+    .workshop,
+    .catalog,
+    .finished,
+    .workicon,
+    .photo,
+    .services{
         padding: 5rem 0;
     }
     .advantages-block__item{
@@ -122,14 +174,27 @@
     }
     .work-block,
     .varieties-block,
-    .workshop-block{
+    .workshop-block,
+    .finished-block,
+    .photo-block,
+    .quality-box,
+    .services-block{
         padding-bottom: 15px;
         overflow-x: auto;
         flex-wrap: nowrap;
     }
     .work-block__item,
-    .varieties-block__item{
-        min-width: 270px;
+    .varieties-block__item,
+    .finished-block__item,
+    .photo-block__item,
+    .quality-box__item,
+    .services-block__item{
+        min-width: 260px;
+    }
+    .finished-block__item img,
+    .photo-block__item img{
+        width: 100%;
+        object-fit: cover;
     }
     .work-block__item-text{
         margin-bottom: 5px;
@@ -148,5 +213,174 @@
     .workshop-block__item::before{
         display: none;
     }
-   
+    .catalog-block{
+        gap: 1rem;
+    }
+    .catalog-block__content-text{
+        font-size: 16px;
+    }
+    .catalog-block__img{
+        width: 50%;
+    }
+    .catalog-block__img img{
+        margin: 0 auto;
+    }
+    .catalog__subtitle{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .catalog-box {
+        gap: 15px;
+        justify-content: center;
+    }
+    .catalog-box__item{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .workicon-block__item-img img{
+        width: 50px;
+    }
+    .workicon-block__item-text,
+    .finished__text,
+    .photo__text,
+    .quality-block__content-text,
+    .quality-box__item-text,
+    .services__text,
+    .services-block__item-text,
+    .footer-center__menu li a{
+        font-size: 16px;
+    }
+    .workicon-block__item {
+        width: calc(100% / 2 - 10px);
+    }
+    .workicon__title {
+        text-align: center;
+    }
+    .quality-top,
+    .quality-bottom{
+        padding-top: 5rem;
+    }
+    .footer-top,
+    .footer-center{
+        padding-top: 30px;
+    }
+    .quality-block{
+        gap: 2rem;
+    }
+    .quality-box__item-title{
+        font-size: 20px;
+    }
+    .quality-box__item::before{
+        display: none;
+    }
+    .quality-box__item{
+        margin: 0;
+    }
+    .quality-box,
+    .services-block{
+        gap: 20px;
+    }
+    .services__text{
+        margin-bottom: 20px;
+    }
+    .services-block__item-title{
+        margin-bottom: 10px;
+    }
+    .footer-top__inner{
+        flex-direction: column;
+    }
+    .footer-top__left,
+    .footer-top__right,
+    .footer-top__elem{
+        width: 100%;
+    }
+    .footer-top__left-title,
+    .footer-top__form-title{
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .footer-top__item,
+    .footer-top__elem span{
+        font-size: 16px;
+    }
+    .footer-center__item-title{
+        position: relative;
+        margin-bottom: 5px;
+        display: inline-block;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .footer-center__item-title::before{
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        right: -25px;
+        top: 3px;
+        border-bottom: 2px solid #c57b46;
+        border-left: 2px solid #c57b46;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transition: all .4s ease-in;
+        -o-transition: all .4s ease-in;
+        transition: all .4s ease-in;
+    }
+    .footer-center__item-title.open.footer-center__item-title::before{
+        transform: rotate(135deg);
+        transition: all .4s ease-in;
+        top: 5px;
+    }
+    .footer-center__block{
+        gap: 30px;
+    }
+    .footer-center__box{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .footer-center__item{
+        width: 100%;
+    }
+    .footer-top__inner{
+        gap: 15px;
+    }
+    .footer-top__form-text{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .footer-top__elem-btn{
+        margin-top: 10px;
+        transform: translateY(0);
+    }
+    .footer-center__menu li{
+        line-height: 1.1;
+    }
+    .footer-bottom{
+        padding: 10px;
+    }
+    .footer-bottom__box{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .footer-center,
+    .footer-top{
+        padding-bottom: 20px;
+    }
+    .footer-center__menu{
+        display: none;
+    }
+    .modal__inner{
+        padding: 0 15px;
+    }
+    .modal__close{
+        right: 22px;
+    }
+    .modal__inner-block-title{
+        font-size: 24px;
+    }
+    .btnUp{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
 }
